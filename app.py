@@ -18,7 +18,7 @@ def main():
     # Button to start face detection
     if st.button('Start Face Detection'):
         # Initialize the video capture object
-        cap = cv2.VideoCapture(-1,cv2.CAP_DSHOW)
+        cap = cv2.VideoCapture(0)
         frame_placeholder = st.empty()
         stop_button_pressed = st.button("Stop")
         # Start video streaming

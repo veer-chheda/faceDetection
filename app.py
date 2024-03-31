@@ -49,8 +49,8 @@ def main():
     st.title('Deep Face Detection Using CNN and OpenCV')
     st.write('This app demonstrates face detection using transfer learning.')
 
-    webrtc_ctx = webrtc_streamer(key="face-detection", video_processor_factory=FaceDetector, rtc_configuration={  # Add this line
-        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+    webrtc_ctx = webrtc_streamer(key="face-detection", video_processor_factory=FaceDetector, rtc_configuration={
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302","stun1.l.google.com:19302","stun2.l.google.com:19302","stun.ucsb.edu:3478"]}]
     }
     )
 
